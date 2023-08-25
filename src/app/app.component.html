@@ -2,25 +2,20 @@
   <header class="dashboard-header">
     <h1>Team Dashboard</h1>
   </header>
-  <div class="upload-section">
-    <label for="fileInput">Upload Excel File:</label>
-    <input type="file" id="fileInput" (change)="onFileChange($event)" />
-  </div>
+  <br>
   <section class="data-section">
     <div class="data-table">
-      <table>
+      <table class="custom-table">
         <thead>
           <tr>
             <th>Team</th>
             <th>Total</th>
-            <!-- Add more columns as needed -->
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let item of data">
             <td>{{ item.Team }}</td>
             <td>{{ item.Total }}</td>
-            <!-- Display more properties here -->
           </tr>
         </tbody>
       </table>
